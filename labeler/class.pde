@@ -24,10 +24,14 @@ ArrayList<Trial> g_trials(String json_file) {
 }
 
 void s_trials(ArrayList<Trial> trials, int f) {
+  text("" + get_label(trials, f), 10, 10);
+}
+
+int get_label(ArrayList<Trial> trials, int f) {
   for (Trial trial : trials) {
     if ( trial.start <= f && f <= trial.end) {
-      text("" + trial.label, 20, 20);
-      return;
+      return trial.label;
     }
   }
+  return -1;
 }
