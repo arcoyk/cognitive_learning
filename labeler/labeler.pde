@@ -3,26 +3,33 @@ Movie mov;
 ArrayList labels = new ArrayList();
 int start_flame = 0;
 ArrayList<Trial> trials;
+Bar bar;
 
 void setup() {
   mov = new Movie(this, "blackbird1.mov");
-  size(640, 426);
+  size(640 * 2, 426);
   mov.play();
   mov.jump(0);
   
   //init
   fill(0);
   trials = g_trials(sketchPath("data/trials.json"));
+  bar = new Bar(trials);
 }
 
 int crr = 0;
 void draw() {
+  background(255);
   if (mov.available()) {
     mov.read();
     crr++;
   }
-  image(mov, 0, 0);
-  s_trials(trials, crr);
+  if (get_label(trials, crr) == 1) {
+    image(mov, 0, 0);
+  }else {
+    image(mov, mov.width, 0);
+  }
+  bar.show(trials, crr);
 }
 
 void keyPressed() {
