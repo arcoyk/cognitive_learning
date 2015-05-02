@@ -1,0 +1,17 @@
+{'start':0, 'end':112, 'label':t}
+{'start':112, 'end':196, 'label':f}
+{'start':196, 'end':260, 'label':t}
+{'start':260, 'end':348, 'label':t}
+{'start':348, 'end':438, 'label':t}
+{'start':438, 'end':520, 'label':t}
+{'start':520, 'end':607, 'label':f}
+{'start':607, 'end':671, 'label':f}
+{'start':671, 'end':725, 'label':t}
+{'start':725, 'end':807, 'label':f}
+{'start':807, 'end':876, 'label':f}
+{'start':876, 'end':921, 'label':f}
+{'start':921, 'end':977, 'label':f}
+{'start':977, 'end':1028, 'label':f}
+{'start':1028, 'end':1087, 'label':t}
+{'start':1087, 'end':1185, 'label':t}
+{'start':1185, 'end':1238, 'label':f}
